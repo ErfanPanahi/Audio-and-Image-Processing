@@ -14,16 +14,19 @@ b. Noise Reduction Using FIR Filters (fdatool)
 
 **2- Image Processing**
 
+The process of image processing refers to a set of methods in which improving the quality of an image is addressed, or desired features are extracted from the image. In essence, image processing involves mapping from a space of m × n dimensions or m × n × 3 dimensions (depending on whether the image is grayscale or color) to another space. The dimensionality of this mapping's output, whether it remains an image or becomes features, can vary; in the case of the output still being an image, it would have dimensions of m × n, whereas if it becomes features, it could have different dimensions.
 
+As we know, a black and white image is constructed from a matrix in which the elements inside represent the image's grayscale levels. If the image is in color, we require 3 matrices, each of which covers the primary colors, and with their values, the color of each pixel can be distinguished.
 
+![image](https://github.com/ErfanPanahi/Audio-and-Image-Signal-Processing/assets/107314081/63622983-c943-4464-bc0c-13a859952e5f)
 
-
+The kernel matrix is generally square and by applying it to images, the image quality can be improved or the desired use of the output can be achieved. Applying it to images refers to sliding it over the matrix of an image, or in other words, convolving it in a two-dimensional manner within the matrix of an image.
 
 ![image](https://github.com/ErfanPanahi/Audio-and-Image-Signal-Processing/assets/107314081/9c0f4f69-7e0b-4fec-842e-ce896ded426f)
 
-
-
 ![image](https://github.com/ErfanPanahi/Audio-and-Image-Signal-Processing/assets/107314081/4bbc6892-e973-4bc1-a7a6-043127fc6da2)
+
+The output of applying each kernel to the image "house.jpg":
 
 ![image](https://github.com/ErfanPanahi/Audio-and-Image-Signal-Processing/assets/107314081/1d0e265e-b9d3-45ef-bf77-30c61e89e134)
 
