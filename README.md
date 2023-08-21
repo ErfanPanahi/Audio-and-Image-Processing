@@ -30,11 +30,17 @@ The output of applying each kernel to the image "house.jpg":
 
 ![image](https://github.com/ErfanPanahi/Audio-and-Image-Signal-Processing/assets/107314081/1d0e265e-b9d3-45ef-bf77-30c61e89e134)
 
+**Defining the edges of the paper idea:**
 
+First, we detect the edges of the paper using H-line and V-line kernels. 
 ![image](https://github.com/ErfanPanahi/Audio-and-Image-Signal-Processing/assets/107314081/99453278-aa77-499d-8468-f1196327dbbd)
+
+As can be seen, the horizontal and vertical edges are indicated by these two white-colored filters. As demonstrated in computer exercise 2, white points have larger values, and therefore, we can conclude that if we sum the rows and columns, the white edges possess the highest values. Consequently, we can obtain the two horizontal edges and two vertical edges in the same manner. The intersection point of these 4 edges gives us the 4 corner points of the paper. Ultimately, by locating these 4 points and utilizing the `rectangle` command, we draw the rectangles of the edges of the image.
+
 
 
 ![image](https://github.com/ErfanPanahi/Audio-and-Image-Signal-Processing/assets/107314081/1eec4672-2424-4f57-a098-18bc544df0bf)
 
+Finally, we also use another image to test the written function. (function is in live script (.mlx) file)
 ![image](https://github.com/ErfanPanahi/Audio-and-Image-Signal-Processing/assets/107314081/5eeb25af-fa4e-418f-857b-2a634cc924cf)
 
